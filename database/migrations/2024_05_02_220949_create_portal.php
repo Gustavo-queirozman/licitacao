@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('portal', function (Blueprint $table) {
             $table->id();
-            $table->string('url_site_licitacao');
-            $table->string('url_site_pregao');
+            $table->string('url_site_licitacao',255);
+            $table->string('url_site_pregao',255);
             $table->timestamps();
         });
     }
