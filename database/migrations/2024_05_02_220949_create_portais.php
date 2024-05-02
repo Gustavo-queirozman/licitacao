@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('portal', function (Blueprint $table) {
+        Schema::create('portais', function (Blueprint $table) {
             $table->id();
             $table->string('url_site_licitacao',255);
             $table->string('url_site_pregao',255);
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('portal');
+        Schema::dropIfExists('portais');
     }
 };
